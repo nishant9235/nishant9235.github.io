@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nishant9235 | Student Portfolio</title>
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    header {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #2a5298;
+      margin-bottom: 15px;
+    }
+    .section {
+      background: white;
+      border-radius: 10px;
+      padding: 30px 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    ul li {
+      background: #e0e7ff;
+      padding: 10px 15px;
+      border-radius: 8px;
+      flex: 1 1 calc(50% - 15px);
+      box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    }
+    /* Project cards */
+    .projects-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+    .project-card {
+      background: #e0e7ff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 calc(50% - 20px);
+      transition: transform 0.2s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .project-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #1e3c72;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 30px;
+      border-top: 1px solid #ddd;
+      background: #fafafa;
+      transition: background 0.3s, color 0.3s;
+    }
+    a {
+      color: #2a5298;
+      text-decoration: none;
+    }
+    /* Dark mode styles */
+    body.dark {
+      background-color: #121212;
+      color: #eee;
+    }
+    body.dark header {
+      background: linear-gradient(90deg, #0b1e3b, #153f71);
+      color: #eee;
+    }
+    body.dark .section {
+      background: #1e1e1e;
+      box-shadow: 0 0 15px rgba(0,0,0,0.7);
+    }
+    body.dark ul li, body.dark .project-card {
+      background: #2a2a2a;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      color: #ddd;
+    }
+    body.dark footer {
+      background: #1a1a1a;
+      color: #aaa;
+      border-top-color: #333;
+    }
+    /* Dark mode toggle button */
+    .toggle-dark {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #2a5298;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+      font-size: 0.9em;
+      user-select: none;
+      z-index: 1000;
+    }
+    .toggle-dark:hover {
+      background: #1e3c72;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      ul li, .project-card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<button class="toggle-dark" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+
+<header>
+  <h1>Nishant Kumar</h1>
+  <p>B.Tech Computer Science Student | Web Developer | Learner</p>
+</header>
+
+<div class="container">
+
+  <section class="section">
+    <h2>About Me</h2>
+    <p>I am a final-year B.Tech student passionate about web development, open-source, and problem-solving. I love building web projects using HTML, CSS, JavaScript, and Termux + GitHub.</p>
+  </section>
+
+  <section class="section">
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 HTML, CSS, JavaScript</li>
+      <li>🛠 Git & GitHub</li>
+      <li>📱 Responsive Web Design</li>
+      <li>🔐 Basic Cybersecurity</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+      <li class="project-card">
+        <strong>Student Portfolio Website</strong>
+        Hosted on GitHub Pages with Termux
+      </li>
+      <li class="project-card">
+        <strong>College Attendance Tracker</strong>
+        Built with HTML & JavaScript
+      </li>
+      <li class="project-card">
+        <strong>Mini Resume Site</strong>
+        Created using Termux and GitHub
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Certificates</h2>
+    <ul>
+      <li>Frontend Development – Coursera</li>
+      <li>Git & GitHub – Google Digital Garage</li>
+      <li>Python Basics – SoloLearn</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Contact</h2>
+    <p>Email: yourmail@example.com</p>
+    <p>GitHub: <a href="https://github.com/nishant9235" target="_blank" rel="noopener noreferrer">nishant9235</a></p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Nishant Kumar | Built using Termux & GitHub Pages
+</footer>
+
+<script>
+  const toggleBtn = document.querySelector('.toggle-dark');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    if(document.body.classList.contains('dark')){
+      toggleBtn.textContent = '☀️ Light Mode';
+    } else {
+      toggleBtn.textContent = '🌙 Dark Mode';
+    }
+  });
+</script>
+
+</body>
+</html>
